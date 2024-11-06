@@ -19,7 +19,10 @@ const Home = () => {
           </li>
         ))}
       </ul>
-      <button className="btn btn-primary" onClick={() => setShowModal(true)}>
+      <button
+        className="btn btn-primary mt-3"
+        onClick={() => setShowModal(true)}
+      >
         Add Note
       </button>
       <AddNoteModal show={showModal} onClose={() => setShowModal(false)} />
